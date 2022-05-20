@@ -34,6 +34,8 @@ app.use(express.static(path.join(__dirname, 'public'))); // Setup listender on s
 
 app.use(routes); // Implement any routes that are setup onto the server
 
+console.log(module.exports)
+
 sequelize.sync({ force: false }).then(() => {
   app.listen(PORT, () => console.log('http://localhost:3001/'));
 }).catch((err) => console.log(err)); // activate the server when file is called

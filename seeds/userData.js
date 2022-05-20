@@ -1,24 +1,24 @@
-const { Users } = require('../models');
+const Users = require('../models/Users');
 
 const galleryData = [
     {
-      "name": "Sal",
+      "username": "Sal",
       "password": "password12345"
     },
     {
-      "name": "Lernantino",
+      "username": "Lernantino",
       "password": "password12345"
     },
     {
-      "name": "Amiko",
+      "username": "Amiko",
       "password": "password12345"
     },
     {
-      "name": "Jordan",
+      "username": "Jordan",
       "password": "password12345"
     },
     {
-      "name": "Blake",
+      "username": "Blake",
       "password": "password12345"
     }
 ];
