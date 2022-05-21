@@ -1,4 +1,4 @@
-<a id="projects{{user_id}}" href="/projects/{{user_id}}">
+<div id="projects{{id}}">
   <div class="container">
     <div class="row">
       <div class="col-sm">
@@ -12,5 +12,7 @@
   <div class="col-sm">
       <p>{{description}}</p>
   </div>
-</a>
-    
+</div>
+{{#each posts}}
+{{> post-details}}
+{{/each}}
