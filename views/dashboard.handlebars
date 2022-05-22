@@ -1,16 +1,24 @@
-Here I am taken to a place where a user can make posts about their blogs
+<a id="projects{{id}}" class="currentUserProjects">
+    <section id="makeProject" data-username="{{username}}" style="display: none;">
+        <label for="projectTtitle">Title</label>
+        <input type="text" id="projectTitle" name="projectTtitle">
+        <label for="projectText">Details</label>
+        <input type="text" id="projectText" name="projectText">
+        <button id="create" type="submit">Create Project</button>
+    </section>
 
-{{!-- <section id="">
+    <div id="project" class="container">
+        <div class="row">
+        {{#each projects}}
+        {{> user-project-details}}
+        {{/each}}
+        </div>
+    </div>
+</a>
 
-</section> --}}
 
 
-post title
-contents
-post creator’s username
-date created
-Option to leave comment
+<button id="newPost">Make Project</button>
 
-WHEN I enter a comment and click on the submit button while signed in
-
-the comment is saved and the post is updated to display the comment, the comment creator’s username, and the date created
+<script src="/js/newProject.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
