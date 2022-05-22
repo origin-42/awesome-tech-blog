@@ -1,3 +1,7 @@
+{{#if projects}}
 {{#each projects as |project|}}
 {{> project-details}}
 {{/each}}
+{{else}}
+<p>No projects yet created</p>
+{{/if}}
