@@ -4,7 +4,7 @@ const makeProject = async (event) => {
     const title = $("#projectTitle").val().trim();
     const text = $("#projectText").val().trim();
     const user = $(".currentUserProjects").attr('id').slice(8);
-    
+  
     const response = await fetch('/api/users/projects', {
         method: 'POST',
         body: JSON.stringify({ title, text, user }),
@@ -23,7 +23,7 @@ let displayed = false;
 const showProjects = async () => {
    
     if (!displayed) {
-        $('#makeProject').css("display", "inherit");
+        $('#makeProject').css("display", "flex");
         displayed = true
     } else {
         $('#makeProject').css("display", "none");

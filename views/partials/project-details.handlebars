@@ -1,16 +1,10 @@
-<a id="projects{{id}}" href="/projects/{{id}}">
+<a id="projects{{id}}" class="projects" href="/projects/{{id}}">
   <div class="container">
-    <div class="row">
-      <div class="col-sm">
-        <h2>{{title}}</h2>
-      </div>
-      <div class="col-sm">
-        <h2>Posted by {{user.username}} on {{format_time createdAt}}</h2>
-      </div>
+    <div class="title">
+      <h2>{{title}}</h2>
+      <h2>Posted by {{user.username}} on {{format_time createdAt}}</h2>
     </div>
-  </div>
-  <div class="col-sm">
-      <p>{{description}}</p>
+    <p class="body_content">{{description}}</p>
   </div>
 </a>
     

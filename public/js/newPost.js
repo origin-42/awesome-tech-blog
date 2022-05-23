@@ -23,7 +23,7 @@ let displayed = false;
 const showComments = async () => {
    
     if (!displayed) {
-        $('#makeComment').css("display", "inherit");
+        $('#makeComment').css("display", "flex");
         displayed = true
     } else {
         $('#makeComment').css("display", "none");

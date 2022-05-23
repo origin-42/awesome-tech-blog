@@ -1,11 +1,13 @@
-<section id="updateProject{{id}}" class="project" data-username="none">
-    <h2>Edit</h2>
-    <label for="projectTitle">Title</label>
-    <input type="text" id="projectTitle" name="projectTitle" value="{{title}}">
-    <label for="projectText">Description</label>
-    <input type="text" id="projectText" name="projectText" value="{{description}}">
-    <button id="update" type="submit">Update Project</button>
-    <button id="delete" type="submit">Delete Project</button>
+<h2 class="edit">Edit</h2>
+<section id="updateProject{{id}}" class="single-projects" data-username="none">
+    <div class="user-project-single">
+        <label for="projectTitle">Title</label>
+        <input type="text" id="projectTitle" name="projectTitle" value="{{title}}">
+        <label for="projectText">Description</label>
+        <input type="text" id="projectText" name="projectText" value="{{description}}">
+        <button id="update" type="submit">Update Project</button>
+        <button id="delete" type="submit">Delete Project</button>
+    </div>
 </section>
 
 <script src="/js/projectUpdate.js"></script>

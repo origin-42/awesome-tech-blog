@@ -1,15 +1,16 @@
 <a id="projects{{id}}" class="currentProject">
   <div id="project" class="container">
-    <div class="row">
+    <div class="row projectComments">
       <div class="col-sm">
-        <h2>{{title}}</h2>
+        <h2>"{{title}}"</h2>
       </div>
       <div class="col-sm">
         <h2>Posted by {{user.username}} on {{format_time createdAt}}</h2>
       </div>
     </div>
   </div>
-  <div class="col-sm">
+  <div class="col-sm curProjectDescr">
+      <h3>Project Details</h3>
       <p>{{description}}</p>
   </div>
 </a>

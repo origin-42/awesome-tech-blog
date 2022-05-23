@@ -155,7 +155,7 @@ router.put('/dashboard/projects/:id', async (req, res) => {
 router.delete('/dashboard/projects/:id', async (req, res) => {
 
   try {
-
+    
     const deleted = await Projects.destroy({ 
       where: { 
       id: req.params.id,

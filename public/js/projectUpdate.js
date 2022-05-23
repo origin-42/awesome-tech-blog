@@ -3,7 +3,7 @@ const updateProject = async (event) => {
 
     const title = $('#projectTitle').val();
     const description = $('#projectText').val();
-    const projectId = $('.project').attr('id').split("").slice(13).join("");
+    const projectId = $('.single-projects').attr('id').split("").slice(13).join("");
 
     const response = await fetch(`/dashboard/projects/${projectId}`, {
         method: 'PUT',
@@ -22,7 +22,7 @@ const updateProject = async (event) => {
 const deleteProject = async (event) => {
     event.preventDefault();
 
-    const projectId = $('.project').attr('id').split("").slice(13).join("");
+    const projectId = $('.single-projects').attr('id').split("").slice(13).join("");
 
     const response = await fetch(`/dashboard/projects/${projectId}`, {
         method: 'DELETE',
