@@ -18,7 +18,7 @@ I wanted a place for users to be able to store ideas about current and future id
 
 ### Problem
 
-This provides an easy to use place to login, create, and share ideas with like minded individuals.
+This provides an easy-to-use place to log in, create, and share ideas with like-minded individuals.
 
 ### Information
 
@@ -44,8 +44,6 @@ installation
 
 [Origin 42](hyperlink): Dave Plummer
 
-## Lisences
-
 ## Questions
 
 Direct any questions too;
@@ -55,7 +53,5 @@ Direct any questions too;
 
 ## Extras
 
-[title](link)
-
-![snippet](link)
-
+[Home Page](https://technical-blogger-das-min.herokuapp.com/)
+[![Home Page](image)](https://technical-blogger-das-min.herokuapp.com/) 
