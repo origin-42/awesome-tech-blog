@@ -2,7 +2,6 @@ const Users = require('./Users');
 const Projects = require('./Projects');
 const Posts = require('./Posts');
 
-// Users have many projects and posts
 Users.hasMany(Projects, {
   foreignKey: 'user_id',
 });
@@ -19,7 +18,6 @@ Posts.belongsTo(Users, {
   foreignKey: 'user_id',
 })
 
-// Projects have many posts
 Projects.hasMany(Posts, {
   foreignKey: 'projects_id',
 })
